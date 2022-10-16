@@ -37,14 +37,16 @@
         <!--Fecha a div header-->
 
         <div class="main">
+          
           <div class="catalogo centVert prato"  data-test="dishes">
             <div class="prato-bebida-sobremesa titulo">Primeiro, seu prato</div>
           <!--Inicia a div pbs: a div que agrupa todos os containers-->
           <div class="pbs" >
             <!--Inicia a div containerItem, onde fica posicionado a foto e descrição do prato, bebida ou sobremesa-->
-              <div class="containerItem" data-test="food-option">
-                 <img  class="fotoPBS" src="Imagens\pratos\frango_yin_yang.jpg"/>
-                  
+              <div class="containerItem"  onclick="adicionarBorda(this);"  onclick="adicionarBorda(this);" data-test="food-option">
+                <div id="iconeSelecao"><ion-icon name="checkmark-circle"></ion-icon></div>
+                
+                <img  class="fotoPBS" src="Imagens\pratos\frango_yin_yang.jpg"/>
                  <div class="descricaoItem centHorVert2">
                   <h1 class="nomePBS" data-test="food-title">Frango Yin Yang</h1>
                   <h1 class="descricaoPBS">Um pouco de batata, um pouco de salada</h1>
@@ -53,8 +55,10 @@
                 </div>
                 <!--Fecha a div containerItem-->
 
-              <div class="containerItem" data-test="food-option">
-                 <img  class="fotoPBS" src="Imagens\pratos\lasanha.jfif"/>
+              <div class="containerItem"  onclick="adicionarBorda(this);" data-test="food-option">
+                 <div id="iconeSelecao"><ion-icon name="checkmark-circle"></ion-icon></div>
+                <div id="iconeSelecao"><ion-icon name="checkmark-circle"></ion-icon></div>
+                <img  class="fotoPBS" src="Imagens\pratos\lasanha.jfif"/>
                 <div class="descricaoItem centHorVert2">
                   <h1 class="nomePBS" data-test="food-title">Lasanha de carne</h1>
                   <h1 class="descricaoPBS">Um paraíso na terra</h1>
@@ -63,7 +67,8 @@
               </div>
               <!--Fecha a div containerItem-->
 
-              <div class="containerItem" data-test="food-option">
+              <div class="containerItem"  onclick="adicionarBorda(this);" data-test="food-option">
+                <div id="iconeSelecao"><ion-icon name="checkmark-circle"></ion-icon></div>
                 <img  class="fotoPBS" src="Imagens\pratos\nhoque.jpg"/>
                 <div class="descricaoItem centHorVert2">
                   <h1 class="nomePBS" data-test="food-title">Nhoque</h1>
@@ -83,8 +88,9 @@
           <div class="prato-bebida-sobremesa titulo">Agora, sua bebida</div>
           <!--Inicia a div pbs: a div que agrupa todos os containers-->
         <div class="pbs">
-          <div class="containerItem" data-test="food-option">
-            <img  class="fotoPBS" src="Imagens\bebidas\coquinha_gelada.png"/>
+          <div class="containerItem"  onclick="adicionarBorda(this);" data-test="food-option">
+            <div id="iconeSelecao"><ion-icon name="checkmark-circle"></ion-icon></div>
+                <img  class="fotoPBS" src="Imagens\bebidas\coquinha_gelada.png"/>
             <div class="descricaoItem centHorVert2">
               <h1 class="nomePBS" data-test="food-title">Coquinha gelada</h1>
               <h1 class="descricaoPBS">Lata 350ml</h1>
@@ -93,8 +99,9 @@
           </div>
           <!--Fecha a div containerItem-->
 
-          <div class="containerItem" data-test="food-option">
-          <img  class="fotoPBS" src="Imagens\bebidas\guarana.jpg"/>
+          <div class="containerItem"  onclick="adicionarBorda(this);" data-test="food-option">
+          <div id="iconeSelecao"><ion-icon name="checkmark-circle"></ion-icon></div>
+                <img  class="fotoPBS" src="Imagens\bebidas\guarana.jpg"/>
             <div class="descricaoItem centHorVert2">
               <h1 class="nomePBS" data-test="food-title">Guaraná Mineiro</h1>
               <h1 class="descricaoPBS">Pitchulinha 250ml</h1>
@@ -103,8 +110,9 @@
           </div>
           <!--Fecha a div containerItem-->
 
-          <div class="containerItem" data-test="food-option">
-             <img  class="fotoPBS" src="Imagens\bebidas\dolly.jpg"/>
+          <div class="containerItem"  onclick="adicionarBorda(this);" data-test="food-option">
+             <div id="iconeSelecao"><ion-icon name="checkmark-circle"></ion-icon></div>
+                <img  class="fotoPBS" src="Imagens\bebidas\dolly.jpg"/>
             <div class="descricaoItem centHorVert2">
               <h1 class="nomePBS" data-test="food-title">Dolly</h1>
               <h1 class="descricaoPBS">Aposto que você também nunca bebeu</h1>
@@ -121,8 +129,9 @@
         <div class="prato-bebida-sobremesa titulo">Por fim, sua sobremesa</div>
       
       <div class="pbs">
-        <div class="containerItem" data-test="food-option">
-          <img  class="fotoPBS" src="Imagens\sobremesas\pudim.jpg"/>
+        <div class="containerItem"  onclick="adicionarBorda(this);" data-test="food-option">
+          <div id="iconeSelecao"><ion-icon name="checkmark-circle"></ion-icon></div>
+                <img  class="fotoPBS" src="Imagens\sobremesas\pudim.jpg"/>
           <div class="descricaoItem centHorVert2">
             <h1 class="nomePBS" data-test="food-title">Pudim</h1>
             <h1 class="descricaoPBS">Apenas pudim</h1>
@@ -131,8 +140,9 @@
         </div>
         <!--Fecha a div containerItem-->
 
-        <div class="containerItem" data-test="food-option">
-         <img  class="fotoPBS" src="Imagens\sobremesas\tortaAlema.webp"/>
+        <div class="containerItem"  onclick="adicionarBorda(this);" data-test="food-option">
+         <div id="iconeSelecao"><ion-icon name="checkmark-circle"></ion-icon></div>
+                <img  class="fotoPBS" src="Imagens\sobremesas\tortaAlema.webp"/>
           <div class="descricaoItem centHorVert2">
             <h1 class="nomePBS" data-test="food-title">Torta Alemã</h1>
             <h1 class="descricaoPBS">Evite a piada do pavê</h1>
@@ -141,7 +151,7 @@
         </div>
         <!--Fecha a div containerItem-->
 
-        <div class="containerItem" data-test="food-option">
+        <div class="containerItem"  onclick="adicionarBorda(this);" data-test="food-option">
            <img class="fotoPBS"  src="Imagens\sobremesas\sorvete.jfif"/>
           <div class="descricaoItem centHorVert2">
             <h1 class="nomePBS" data-test="food-title">Sorvete</h1>
@@ -166,5 +176,9 @@
 </div>
         </div>
         <!--Fecha a div footer-->
-    <script src="script"></script>
+    <script src="script.js"></script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+  ></script>
 </body>
