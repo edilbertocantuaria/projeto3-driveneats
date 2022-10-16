@@ -77,6 +77,31 @@
               </div>
               <!--Fecha a div containerItem-->
 
+              <div class="containerItem galinhada "  onclick="adicionarBorda_Prato(this)" data-test="food-option">
+                <div id="iconeSelecao" class="icone"><ion-icon name="checkmark-circle"></ion-icon></div>
+                
+                <img  class="fotoPBS" src="Imagens\pratos\galinhada.jpg"/>
+                 <div class="descricaoItem centHorVert2">
+                  <h1 class="nomePBS" data-test="food-title">Galinhada</h1>
+                  <h1 class="descricaoPBS">Bem temperada com alho, cebola e pimenta de cheiro</h1>
+                  <h1 class="precoPBS" data-test="food-price">R$ 19,90</h1>
+                  </div>
+                </div>
+                <!--Fecha a div containerItem-->
+
+
+                <div class="containerItem feijoada "  onclick="adicionarBorda_Prato(this)" data-test="food-option">
+                  <div id="iconeSelecao" class="icone"><ion-icon name="checkmark-circle"></ion-icon></div>
+                  
+                  <img  class="fotoPBS" src="Imagens\pratos\feijoada.jpg"/>
+                   <div class="descricaoItem centHorVert2">
+                    <h1 class="nomePBS" data-test="food-title">Feijoada</h1>
+                    <h1 class="descricaoPBS">Com uma couve bem refogada e rodelas de laranjas bem docinha</h1>
+                    <h1 class="precoPBS" data-test="food-price">R$ 18,89</h1>
+                    </div>
+                  </div>
+                  <!--Fecha a div containerItem-->
+
           </div>
            <!--Fecha a div pbs-->
 
@@ -171,7 +196,7 @@
 
         <div class="footer">
 <div class="menu inferior centHorVert">
-<button class="botaoPedido " data-test="finish-button">Selecione os 3 itens
+<button class="botaoPedido " onclick="relizarPedido(this)" data-test="finish-button">Selecione os 3 itens
   para fechar o pedido</button>
 </div>
         </div>

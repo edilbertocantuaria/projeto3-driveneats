@@ -7,7 +7,8 @@
 }
 
 body {
-  max-width: 414px;
+  /*max-width: 414px;*/
+  width: 100%;
   height: 1026px;
   background-color: #e5e5e5;
 }
@@ -136,7 +137,8 @@ justify-content: center;
 /*-----------------------------------------------------*/
 /*Partes comuns*/
 .menu {
-  width: 414px;
+  /*width: 414px;*/
+  width: 100%;
   height: 92px;
   left: 0;
   position: fixed;
@@ -182,7 +184,8 @@ justify-content: center;
 }
 
 .pbs {  /*PBS: Prato, Bebida e Sobremesa*/
-  max-width: 414px;
+  /*max-width: 414px;*/
+  width: 100vw;
   height: auto;
 
   padding-left: 16px;
@@ -222,18 +225,10 @@ height: 88px;
 /*-----------------------------------------------------*/
 
 /*Parte com o JavaScript*/
-.borda-selecao-prato{
+.borda-selecao{
   border: 4px solid #32B72F;
   border-radius: 9px;
 }
-.borda-selecao-bebida{
-   border: 4px solid #32B72F;
-   border-radius: 9px;
- }
- .borda-selecao-sobremesa{
-   border: 4px solid #32B72F;
-   border-radius: 9px;
- }
 
 /*.icone{
    opacity: 1;
