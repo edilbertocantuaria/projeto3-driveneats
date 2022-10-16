@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Inicio da responsividade-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!---Relizando o resset-->
+    <link rel="stylesheet" href="D:\Edilberto\Documents\Fullstack - Driven\projetos\projeto3-driveneats\reset.css"/>
+
+    <!-- Invoca para que possa editar o css em outra "aba" dentro do projeto -->
+    <link rel="stylesheet" href="D:\Edilberto\Documents\Fullstack - Driven\projetos\projeto3-driveneats\style.css" />
+
+    <!--Coloca o ícone na aba-->
+    <link rel="icon" href="D:\Edilberto\Documents\Fullstack - Driven\projetos\projeto3-driveneats\Imagens\driven_logo.png" />
+
+    <!--Importando as fontes-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+<title>DrivenEats</title>
+  </head>
+  <body>
+        <div class="header">
+            <div class="menu superior">
+                <h1 class="titulo">DrivenEats</h1>
+                <h2 class="subtitulo">Sua comida em 6 minutos</h2>
+            </div>
+            <!--Fecha a div menuSuperior-->
+        </div>
+        <!--Fecha a div header-->
+
+        <div class="main">
+          <div class="catalogo centVert prato"  data-test="dishes">
+            <div class="prato-bebida-sobremesa titulo">Primeiro, seu prato</div>
+          <!--Inicia a div pbs: a div que agrupa todos os containers-->
+          <div class="pbs" >
+            <!--Inicia a div containerItem, onde fica posicionado a foto e descrição do prato, bebida ou sobremesa-->
+              <div class="containerItem" data-test="food-option">
+                 <img  class="fotoPBS" src="D:\Edilberto\Documents\Fullstack - Driven\projetos\projeto3-driveneats\Imagens\pratos\frango_yin_yang.jpg"/>
+                  
+                 <div class="descricaoItem centHorVert2">
+                  <h1 class="nomePBS" data-test="food-title">Frango Yin Yang</h1>
+                  <h1 class="descricaoPBS">Um pouco de batata, um pouco de salada</h1>
+                  <h1 class="precoPBS" data-test="food-price">R$ 14,90</h1>
+                  </div>
+                </div>
+                <!--Fecha a div containerItem-->
+
+              <div class="containerItem" data-test="food-option">
+                 <img  class="fotoPBS" src="D:\Edilberto\Documents\Fullstack - Driven\projetos\projeto3-driveneats\Imagens\pratos\lasanha.jfif"/>
+                <div class="descricaoItem centHorVert2">
+                  <h1 class="nomePBS" data-test="food-title">Lasanha de carne</h1>
+                  <h1 class="descricaoPBS">Um paraíso na terra</h1>
+                  <h1 class="precoPBS" data-test="food-price">R$ 20,00</h1>
+                </div>
+              </div>
+              <!--Fecha a div containerItem-->
+
+              <div class="containerItem" data-test="food-option">
+                <img  class="fotoPBS" src="D:\Edilberto\Documents\Fullstack - Driven\projetos\projeto3-driveneats\Imagens\pratos\nhoque.jpg"/>
+                <div class="descricaoItem centHorVert2">
+                  <h1 class="nomePBS" data-test="food-title">Nhoque</h1>
+                  <h1 class="descricaoPBS">Sua vô fazia? A minha também não.</h1>
+                  <h1 class="precoPBS" data-test="food-price">R$ 17,90</h1>
+                </div>
+              </div>
+              <!--Fecha a div containerItem-->
+
+          </div>
+           <!--Fecha a div pbs-->
+
+        </div>
+         <!--Fecha a div prato-->
+       
+         <div class="catalogo  centVert bebida" data-test="drinks">
+          <div class="prato-bebida-sobremesa titulo">Agora, sua bebida</div>
+          <!--Inicia a div pbs: a div que agrupa todos os containers-->
+        <div class="pbs">
+          <div class="containerItem" data-test="food-option">
+            <img  class="fotoPBS" src="D:\Edilberto\Documents\Fullstack - Driven\projetos\projeto3-driveneats\Imagens\bebidas\coquinha_gelada.png"/>
+            <div class="descricaoItem centHorVert2">
+              <h1 class="nomePBS" data-test="food-title">Coquinha gelada</h1>
+              <h1 class="descricaoPBS">Lata 350ml</h1>
+              <h1 class="precoPBS" data-test="food-price">R$ 4,90</h1>
+            </div>
+          </div>
+          <!--Fecha a div containerItem-->
+
+          <div class="containerItem" data-test="food-option">
+          <img  class="fotoPBS" src="D:\Edilberto\Documents\Fullstack - Driven\projetos\projeto3-driveneats\Imagens\bebidas\guarana.jpg"/>
+            <div class="descricaoItem centHorVert2">
+              <h1 class="nomePBS" data-test="food-title">Guaraná Mineiro</h1>
+              <h1 class="descricaoPBS">Pitchulinha 250ml</h1>
+              <h1 class="precoPBS" data-test="food-price">R$ 3,50</h1>
+            </div>
+          </div>
+          <!--Fecha a div containerItem-->
+
+          <div class="containerItem" data-test="food-option">
+             <img  class="fotoPBS" src="D:\Edilberto\Documents\Fullstack - Driven\projetos\projeto3-driveneats\Imagens\bebidas\dolly.jpg"/>
+            <div class="descricaoItem centHorVert2">
+              <h1 class="nomePBS" data-test="food-title">Dolly</h1>
+              <h1 class="descricaoPBS">Aposto que você também nunca bebeu</h1>
+              <h1 class="precoPBS" data-test="food-price">R$ 5,50</h1>
+            </div>
+          </div>
+          <!--Fecha a div containerItem-->
+        </div>
+         <!--Fecha a div pbs-->
+      </div>
+       <!--Fecha a bebida-->
+
+       <div class="catalogo centVert sobremesa" data-test="desserts">
+        <div class="prato-bebida-sobremesa titulo">Por fim, sua sobremesa</div>
+      
+      <div class="pbs">
+        <div class="containerItem" data-test="food-option">
+          <img  class="fotoPBS" src="D:\Edilberto\Documents\Fullstack - Driven\projetos\projeto3-driveneats\Imagens\sobremesas\pudim.jpg"/>
+          <div class="descricaoItem centHorVert2">
+            <h1 class="nomePBS" data-test="food-title">Pudim</h1>
+            <h1 class="descricaoPBS">Apenas pudim</h1>
+            <h1 class="precoPBS" data-test="food-price">R$ 7,90</h1>
+          </div>
+        </div>
+        <!--Fecha a div containerItem-->
+
+        <div class="containerItem" data-test="food-option">
+         <img  class="fotoPBS" src="D:\Edilberto\Documents\Fullstack - Driven\projetos\projeto3-driveneats\Imagens\sobremesas\tortaAlema.webp"/>
+          <div class="descricaoItem centHorVert2">
+            <h1 class="nomePBS" data-test="food-title">Torta Alemã</h1>
+            <h1 class="descricaoPBS">Evite a piada do pavê</h1>
+            <h1 class="precoPBS" data-test="food-price">R$ 8,50</h1>
+          </div>
+        </div>
+        <!--Fecha a div containerItem-->
+
+        <div class="containerItem" data-test="food-option">
+           <img class="fotoPBS"  src="D:\Edilberto\Documents\Fullstack - Driven\projetos\projeto3-driveneats\Imagens\sobremesas\sorvete.jfif"/>
+          <div class="descricaoItem centHorVert2">
+            <h1 class="nomePBS" data-test="food-title">Sorvete</h1>
+            <h1 class="descricaoPBS">Tem até de cupuaçu! </h1>
+            <h1 class="precoPBS" data-test="food-price">R$ 6,70</h1>
+          </div>
+        </div>
+        <!--Fecha a div containerItem-->
+      </div>
+       <!--Fecha a div pbs-->
+    </div>
+     <!--Fecha a div sobremesa-->
+       
+       
+        </div>
+        <!--Fecha a div main-->
+
+        <div class="footer">
+<div class="menu inferior centHorVert">
+<button class="botaoPedido " data-test="finish-button">Selecione os 3 itens
+  para fechar o pedido</button>
+</div>
+        </div>
+        <!--Fecha a div footer-->
+    <script src="D:\Edilberto\Documents\Fullstack - Driven\projetos\projeto3-driveneats\script"></script>
+</body>

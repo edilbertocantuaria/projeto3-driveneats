@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  max-width: 414px;
+  height: 1026px;
+  background-color: #e5e5e5;
+}
+
+.main {
+  position: relative;
+  margin-top: 128px;
+}
+/*-----------------------------------------------------*/
+/*Ajustes textuais*/
+.superior h1 {
+  margin-left: 21px;
+}
+
+.superior h2 {
+  margin-left: 21px;
+}
+
+.titulo {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 55px;
+  letter-spacing: -0.012em;
+  color: #ffffff;
+}
+
+.subtitulo {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.botaoPedido {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.018em;
+  color: #ffffff;
+}
+
+.prato-bebida-sobremesa {
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.018em;
+  color: #333333;
+} /*elementos que diferenciam o título dos textos "Primeiro, seu prato", "Agora, sua bebida"  e "Por fim, sua sobremesa"*/
+
+
+/*PBS: Prato, Bebida e Sobremesa*/
+.nomePBS{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+color: #333333;
+}
+
+.descricaoPBS{
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 300;
+   font-size: 15px;
+   line-height: 18px;
+   color: #A6A6A6;
+
+   text-align: left;
+}
+
+.precoPBS{
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   color: #000000;
+}
+
+
+/*-----------------------------------------------------*/
+/*Ajuste de imagens*/
+.fotoPBS{
+width: 144px;
+height: 87px;
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+/*-----------------------------------------------------*/
+
+
+/*Ajustes posicionamentos*/
+.centHorVert {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.centHorVert2 {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-between;
+ }
+
+.centHor {
+  display: flex;
+  justify-content: space-around;
+}
+
+.centVert {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/*-----------------------------------------------------*/
+/*Partes comuns*/
+.menu {
+  width: 414px;
+  height: 92px;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+/*-----------------------------------------------------*/
+/*Tudo do menu superior*/
+.superior {
+  top: 0;
+  background-color: #cf2b2b;
+}
+/*-----------------------------------------------------*/
+
+/*Tudo do botao inferior*/
+.inferior {
+  bottom: 0;
+  background-color: #ffffff;
+}
+
+.botaoPedido {
+  width: 364px;
+  height: 61px;
+  border: 1px solid #cbcbcb;
+  background: #cbcbcb;
+  border-radius: 50px;
+}
+/*-----------------------------------------------------*/
+
+/*Tudo sobre os pratos*/
+.catalogo {
+  height: auto;
+ position: relative;
+  left: 0px;
+    margin-bottom: 27px;
+}
+
+.prato-bebida-sobremesa {
+  width: auto;
+  height: 25px;
+  margin-bottom: 17px;
+  padding-left: 16px;
+}
+
+.pbs {  /*PBS: Prato, Bebida e Sobremesa*/
+  max-width: 414px;
+  height: auto;
+
+  padding-left: 16px;
+  padding-right: 16px;
+  gap: 16px;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: auto;
+  overflow-x: scroll;
+}
+
+.containerItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ padding: 15.5px;
+ gap: 10px;
+  /*justify-content: space-around;*/
+  text-align: center;
+
+  min-width: 172px;
+  height: 216px;
+  background: #FFFFFF;
+
+  box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+}
+
+.descricaoItem{
+width: 144px;
+height: 88px;
+}
+
+/*-----------------------------------------------------*/
