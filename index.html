@@ -27,6 +27,7 @@
 <title>DrivenEats</title>
   </head>
   <body>
+
         <div class="header">
             <div class="menu superior">
                 <h1 class="titulo">DrivenEats</h1>
@@ -194,16 +195,26 @@
         </div>
         <!--Fecha a div main-->
 
-        <div class="footer">
-<div class="menu inferior centHorVert">
-<button class="botaoPedido" onclick="disponibilizarBotao(this)" data-test="finish-button">Selecione os 3 itens
+<div class="footer">
+          <div class="menu inferior centHorVert">
+              <button class="botaoPedido" id="botao" onclick="disponibilizarBotao(this)" data-test="finish-button">Selecione os 3 itens
   para fechar o pedido</button>
+          </div>
 </div>
-        </div>
-        <!--Fecha a div footer-->
+ <!--Fecha a div footer-->
+
+
+
+<div class="revisarPedido escondido centHorVert">
+<div class="itensPedido centHorVert escondido">
+
+</div>
+</div>
+
     <script src="script.js"></script>
     <script
     type="module"
     src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
   ></script>
+
 </body>

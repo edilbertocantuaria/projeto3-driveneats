@@ -58,18 +58,29 @@ function adicionarBorda_Sobremesa(selecionado){
 /*Altera o layout do botão para continuar fazendo o pedido*/ 
 function realizarPedido(apertado){
     if (habilitarBotao==3){
-        const teste = document.querySelector('.botaoPedido');
-        teste.classList.add('botaoDisponivel');
-        teste.innerHTML="Fechar pedido";
+        document.getElementById("botao").disabled =false;
+        const pedido = document.querySelector('.botaoPedido');
+        pedido.classList.add('botaoDisponivel');
+        pedido.innerHTML="Fechar pedido";
     }
 }
 
-/*Ao clicar no botão, ele irá verificar se todos os itens foram marcados. Se há algum item faltando, aparece o alerta. Caso contrário, segue para a próxima página*/ 
+/*Ao clicar no botão, ele irá verificar se todos os itens foram marcados. Se há algum item faltando, nada acontece. Caso contrário, segue para a próxima página*/ 
 function disponibilizarBotao(disponivel){
     if (verificarPrato === null || verificarBebida=== null || verificarSobremesa=== null ){
-        alert("Vc deve escolher pelo menos um item de cada categoria! Vai ter venda casada sim!!! Quem mandou não aprender cozinhar?! Se não gostou:  \n @drfran  \n @seusdireitos \n Procon: 151");
-    }
+       /* alert("Vc deve escolher pelo menos um item de cada categoria! Vai ter venda casada sim!!! Quem mandou não aprender cozinhar?! Se não gostou:  \n @drfran  \n @seusdireitos \n Procon: 151");*/
+       document.getElementById("botao").disabled =true;
+    } else {
+        const teste = document.querySelector('.botaoPedido');
+        teste.innerHTML="teste"; 
+       
+        const embacar = document.querySelector('.revisarPedido');
+        embacar.classList.remove('escondido');
 
+        /*const sumir = document.querySelector('.main');
+        sumir.classList.add('escondido');*/
+
+        }
 } 
 
 

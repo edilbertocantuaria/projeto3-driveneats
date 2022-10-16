@@ -17,6 +17,7 @@ body {
   position: relative;
   margin-top: 128px;
 }
+
 /*-----------------------------------------------------*/
 /*Ajustes textuais*/
 .superior h1 {
@@ -244,6 +245,37 @@ height: 88px;
 }
 
 .botaoDisponivel{
+   font-weight: 700px;
+   color: white;
    background: #32B72F;
+}
+/*-----------------------------------------------------*/
+ 
+/*Revisao do pedido*/
+.escondido{
+   display: none;
+}
+.revisarPedido{
+background-color: rgba(255, 255, 255, 0.9);
+/*background: rgba(255, 0, 0, 0.9);*/
+width: 100vw;
+height: 100vh;
+z-index: 5;
+position: fixed;
+top:0;
+left: 0;
+
+}
+
+.itensPedido{
+display: flex;
+width: 377px;
+height: 353px;
+left: 19px;
+top: calc(50% - 353px/2 - 0.5px);
+
+background: #50D074;
+box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+border-radius: 9px;
 }
 /*-----------------------------------------------------*/
