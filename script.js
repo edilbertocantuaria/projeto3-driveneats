@@ -6,36 +6,26 @@ let selecaoCompleta=0;
 let titulos = [],precos = [];
 
 /*const precoTotal = */
+function adicionarIcone(selecionado){
+    const iconeAnterior =document.querySelector(".prato .borda-selecao .ion-icon .escondido");
 
-function adicionarIcone(check){
-    console.log(check);
-    const selecionado= document.querySelector(".prato .borda-selecao .icone");
-    if (selecionado !== null){
-  console.log(selecionado);
-  /*alert("entrou no if")*/
-     /*selecionado.classList.add("escondido");*/
-     selecionado.classList.remove("icone");
-}
-selecionado.classList.remove("escondido");
-selecionado.classList.add("icone");
-   /*selecionado.classList.remove("escondido")*/;
+
 }
 
-function adicionarBorda_Prato(selecionado, check){
 
-    console.log(selecionado);
-    
+function adicionarBorda_Prato(selecionado){
+
+    /*console.log(selecionado);*/
     const selecionadoAnteriormente = document.querySelector(".prato .borda-selecao");
-     
-    if (selecionadoAnteriormente !== null){
-    console.log(selecionadoAnteriormente);
-     selecionadoAnteriormente.classList.remove("borda-selecao");
-    }
-   
-	selecionado.classList.add("borda-selecao");
-    verificarPrato = document.querySelector('.prato .borda-selecao');
-    habilitarBotao = document.querySelectorAll('.borda-selecao').length;
+  
+    if (selecionadoAnteriormente !== null ){
+    /*console.log(selecionadoAnteriormente);*/
+    selecionadoAnteriormente.classList.remove("borda-selecao");
+    } 
+    selecionado.classList.add("borda-selecao");
 
+   verificarPrato = document.querySelector('.prato .borda-selecao');
+    habilitarBotao = document.querySelectorAll('.borda-selecao').length;
 }
 
 function adicionarBorda_Bebida(selecionado){

@@ -308,7 +308,7 @@ height: 88px;
 }
 
 
-.icone{
+ion-icon{
    font-size: 19px;
    opacity: 1;
    color:#32B72F;
@@ -328,6 +328,7 @@ height: 88px;
 .escondido{
    display: none;
 }
+
 .revisarPedido{
 background-color: rgba(255, 255, 255, 0.9);
 width: 100vw;
