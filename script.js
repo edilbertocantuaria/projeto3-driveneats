@@ -8,19 +8,32 @@ let titulos = [],
 
 /*const precoTotal = */
 function adicionarIcone(selecionado) {
+    const iconeSelecionado = document.querySelector(".borda-selecao .icone");
+ /*  if ( iconeSelecionado !== null) {
+    iconeSelecionado.classList.add(" escondido")
+      }*/
+      
+      /*esconde o item selecionado!*/ 
+    /*  selecionado.classList.add("escondido");*/
 }
 
 function adicionarBorda_Prato(selecionado) {
   /*console.log(selecionado);*/
-  const selecionadoAnteriormente = document.querySelector(
-    ".prato .borda-selecao"
-  );
+  const selecionadoAnteriormente = document.querySelector(".prato .borda-selecao");
+  const iconeSelecionado = document.querySelector(".borda-selecao .icone");
 
   if (selecionadoAnteriormente !== null) {
     /*console.log(selecionadoAnteriormente);*/
     selecionadoAnteriormente.classList.remove("borda-selecao");
+
+
+    /*esconde o check do item, mas com atraso de 1 click*/   
+    /*iconeSelecionado.classList.add("escondido");*/
+    
   }
   selecionado.classList.add("borda-selecao");
+  /*esconde o check do item, mas com atraso de 1 click*/ 
+ iconeSelecionado.classList.add("escondido");
 
   verificarPrato = document.querySelector(".prato .borda-selecao");
   habilitarBotao = document.querySelectorAll(".borda-selecao").length;
@@ -165,22 +178,24 @@ function precoFinal(precos) {
 }
 
 function mensagem() {
-  const nome = prompt("Insira seu nome:");
-  const endereco = prompt("Insira seu endereço:");
-
-  mensagem = `Olá, gostaria de fazer o pedido:
-- Prato: ${titulos[0]}
-- Bebida: ${titulos[1]}
-- Sobremesa: ${titulos[2]}
-
-Total: R$ ${soma.toFixed(2).replace(".", ",")}
-_*Descontos: R$ ${desc.toFixed(2).replace(".", ",")}*_
-_*Final: R$ ${vf.toFixed(2).replace(".", ",")}*_
+    const nome = prompt("Insira seu nome:");
+    const endereco = prompt("Insira seu endereço:");
+  
+    mensagem = `Olá, gostaria de fazer o pedido:
+  - Prato: ${titulos[0]}
+  - Bebida: ${titulos[1]}
+  - Sobremesa: ${titulos[2]}
+  Total: R$ ${soma.toFixed(2).replace(".", ",")}
         
-Nome: ${nome}
-Endereço: ${endereco}`;
-
-  const encodedMessage = encodeURIComponent(mensagem);
-  const url = `https://wa.me/5561999599427?text=${encodedMessage}`;
-  window.open(url, "_blank");
-}
+  Nome: ${nome}
+  Endereço: ${endereco}`;
+  
+    /*Acrescentando as seguintes linhas, a mensagem do whatsapp vai com o desconto e o valor final
+  _*Descontos: R$ ${desc.toFixed(2).replace(".", ",")}*_
+  _*Final: R$ ${vf.toFixed(2).replace(".", ",")}*_*
+  */
+  
+    const encodedMessage = encodeURIComponent(mensagem);
+    const url = `https://wa.me/5561999599427?text=${encodedMessage}`;
+    window.open(url, "_blank");
+  }

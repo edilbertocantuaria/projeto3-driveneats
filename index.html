@@ -24,7 +24,7 @@
       rel="stylesheet"
     />
 
-    <title>CUPOM DE DESCONTO</title>
+    <title>Driven Eats</title>
   </head>
   <body>
     <div class="header">
@@ -67,7 +67,7 @@
             onclick="adicionarBorda_Prato(this); realizarPedido(this); adicionarIcone(this)"
             data-test="food-option"
           >
-            <div class="icone escondido">
+            <div class="icone">
               <ion-icon name="checkmark-circle"></ion-icon>
             </div>
             <img class="fotoPBS" src="Imagens\pratos\lasanha.jfif" />
@@ -275,7 +275,7 @@
     <!--Fecha a div footer-->
 
     <div class="revisarPedido escondido centHorVert">
-      <div class="itensPedido escondido">
+      <div class="itensPedido escondido" data-test="confirmation-dialog">
         <div class="confirmarPedido">Confirme seu pedido</div>
         <div class="listaPedidos centVert2">
           <div class="pedido espHor">
