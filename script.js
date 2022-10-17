@@ -2,76 +2,89 @@ let habilitarBotao = document.querySelectorAll(".borda-selecao").length;
 let verificarPrato = document.querySelector(".prato .borda-selecao");
 let verificarBebida = document.querySelector(".bebida .borda-selecao");
 let verificarSobremesa = document.querySelector(".sobremesa .borda-selecao");
+
+
 let selecaoCompleta = 0;
 let titulos = [],
   precos = [];
 
-/*const precoTotal = */
-function adicionarIcone(selecionado) {
-    const iconeSelecionado = document.querySelector(".borda-selecao .icone");
- /*  if ( iconeSelecionado !== null) {
-    iconeSelecionado.classList.add(" escondido")
-      }*/
-      
-      /*esconde o item selecionado!*/ 
-    /*  selecionado.classList.add("escondido");*/
+ function adicionarIcone_Prato(check){
+const selecionado= document.querySelector(".prato .borda-selecao .icone");
+selecionado.classList.remove("escondido");
 }
 
-function adicionarBorda_Prato(selecionado) {
-  /*console.log(selecionado);*/
-  const selecionadoAnteriormente = document.querySelector(".prato .borda-selecao");
-  const iconeSelecionado = document.querySelector(".borda-selecao .icone");
+function adicionarIcone_Bebida(check){
+    const selecionado= document.querySelector(".bebida .borda-selecao .icone");
+    selecionado.classList.remove("escondido");
+    }
 
-  if (selecionadoAnteriormente !== null) {
-    /*console.log(selecionadoAnteriormente);*/
-    selecionadoAnteriormente.classList.remove("borda-selecao");
+    function adicionarIcone_Sobremesa(check){
+        const selecionado= document.querySelector(".sobremesa .borda-selecao .icone");
+        selecionado.classList.remove("escondido");
+        }
+
+function adicionarBorda_Prato(selecionado){
+    console.log(selecionado);
+    const selecionadoAnteriormente = document.querySelector(".prato .borda-selecao");
+    const iconeSelecionadoPrato = document.querySelector(".prato .borda-selecao .icone");
 
 
-    /*esconde o check do item, mas com atraso de 1 click*/   
-    /*iconeSelecionado.classList.add("escondido");*/
+    if (selecionadoAnteriormente !== null){
+    console.log(selecionadoAnteriormente);
+     selecionadoAnteriormente.classList.remove("borda-selecao");
+     iconeSelecionadoPrato.classList.remove("escondido");
+    }
+
+    selecionado.classList.add("borda-selecao");
+ adicionarIcone_Prato();
+    iconeSelecionadoPrato.classList.add("escondido");
+
+    verificarPrato = document.querySelector('.prato .borda-selecao');
+    habilitarBotao = document.querySelectorAll('.borda-selecao').length;
     
-  }
-  selecionado.classList.add("borda-selecao");
-  /*esconde o check do item, mas com atraso de 1 click*/ 
- iconeSelecionado.classList.add("escondido");
-
-  verificarPrato = document.querySelector(".prato .borda-selecao");
-  habilitarBotao = document.querySelectorAll(".borda-selecao").length;
 }
 
 function adicionarBorda_Bebida(selecionado) {
-  console.log(selecionado);
-
-  const selecionadoAnteriormente = document.querySelector(
-    ".bebida .borda-selecao"
-  );
-  console.log(selecionadoAnteriormente);
-
-  if (selecionadoAnteriormente !== null) {
-    selecionadoAnteriormente.classList.remove("borda-selecao");
+    console.log(selecionado);
+  
+    const selecionadoAnteriormente = document.querySelector(
+      ".bebida .borda-selecao"
+    );
+    const iconeSelecionado = document.querySelector(".bebida .borda-selecao .icone");
+  
+    if (selecionadoAnteriormente !== null){
+    console.log(selecionadoAnteriormente);
+     selecionadoAnteriormente.classList.remove("borda-selecao");
+     iconeSelecionado.classList.remove("escondido");
+    }
+  
+    selecionado.classList.add("borda-selecao");
+  adicionarIcone_Bebida();
+    iconeSelecionado.classList.add("escondido");
+    verificarBebida = document.querySelector(".bebida .borda-selecao");
+    habilitarBotao = document.querySelectorAll(".borda-selecao").length;
   }
-
-  selecionado.classList.add("borda-selecao");
-  verificarBebida = document.querySelector(".bebida .borda-selecao");
-  habilitarBotao = document.querySelectorAll(".borda-selecao").length;
-}
-
-function adicionarBorda_Sobremesa(selecionado) {
-  console.log(selecionado);
-
-  const selecionadoAnteriormente = document.querySelector(
-    ".sobremesa .borda-selecao"
-  );
-  console.log(selecionadoAnteriormente);
-
-  if (selecionadoAnteriormente !== null) {
-    selecionadoAnteriormente.classList.remove("borda-selecao");
+  
+  function adicionarBorda_Sobremesa(selecionado) {
+    console.log(selecionado);
+  
+    const selecionadoAnteriormente = document.querySelector(
+      ".sobremesa .borda-selecao"
+    );
+    const iconeSelecionado = document.querySelector(".sobremesa .borda-selecao .icone");
+  
+    if (selecionadoAnteriormente !== null){
+    console.log(selecionadoAnteriormente);
+     selecionadoAnteriormente.classList.remove("borda-selecao");
+     iconeSelecionado.classList.remove("escondido");
+    }
+  
+    selecionado.classList.add("borda-selecao");
+  adicionarIcone_Sobremesa();
+    iconeSelecionado.classList.add("escondido");
+    verificarSobremesa = document.querySelector(".sobremesa .borda-selecao");
+    habilitarBotao = document.querySelectorAll(".borda-selecao").length;
   }
-
-  selecionado.classList.add("borda-selecao");
-  verificarSobremesa = document.querySelector(".sobremesa .borda-selecao");
-  habilitarBotao = document.querySelectorAll(".borda-selecao").length;
-}
 
 /*Altera o layout do botão para continuar fazendo o pedido*/
 
