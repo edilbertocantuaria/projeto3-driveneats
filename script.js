@@ -3,9 +3,9 @@ let verificarPrato = document.querySelector(".prato .borda-selecao");
 let verificarBebida = document.querySelector(".bebida .borda-selecao");
 let verificarSobremesa = document.querySelector(".sobremesa .borda-selecao");
 
-let verificarIconePrato = document.querySelector(".prato .borda-selecao .icone");
+/*let verificarIconePrato = document.querySelector(".prato .borda-selecao .icone");
 let verificarIconeBebida = document.querySelector(".bebida .borda-selecao .icone");
-let verificarIconeSobremesa = document.querySelector(".sobremesa .borda-selecao .icone");
+let verificarIconeSobremesa = document.querySelector(".sobremesa .borda-selecao .icone");*/
 
 let selecaoCompleta = 0;
 let titulos = [],
@@ -26,7 +26,7 @@ const  iconeSelecionadoBebida= document.querySelector(".bebida .borda-selecao .i
 const  iconeSelecionadoSobremesa= document.querySelector(".prato .borda-selecao .icone");
  coriga = iconeSelecionadoSobremesa.classList.add("escondido");
  }*/
-
+/*
  function adicionarIcone_Prato(check){
 const selecionado= document.querySelector(".prato .borda-selecao .icone");
 selecionado.classList.remove("escondido");
@@ -44,23 +44,23 @@ function adicionarIcone_Bebida(check){
         selecionado.classList.remove("escondido");
         verificarIconeSobremesa = document.querySelector(".sobremesa .borda-selecao .icone");
         }
-
+*/
 function adicionarBorda_Prato(selecionado){
     console.log(selecionado);
     const selecionadoAnteriormente = document.querySelector(".prato .borda-selecao");
-    const iconeSelecionadoPrato = document.querySelector(".prato .borda-selecao .icone");
+    /*const iconeSelecionadoPrato = document.querySelector(".prato .borda-selecao .icone");*/
 
 
     if (selecionadoAnteriormente !== null){
     console.log(selecionadoAnteriormente);
      selecionadoAnteriormente.classList.remove("borda-selecao");
-     iconeSelecionadoPrato.classList.remove("escondido");
+     /*iconeSelecionadoPrato.classList.remove("escondido");*/
     }
 
     selecionado.classList.add("borda-selecao");
-    adicionarIcone_Prato();
+    /*adicionarIcone_Prato();*/
     /*coringaPrato();*/
-    iconeSelecionadoPrato.classList.add("escondido");
+    /*iconeSelecionadoPrato.classList.add("escondido");*/
 
     verificarPrato = document.querySelector('.prato .borda-selecao');
     habilitarBotao = document.querySelectorAll('.borda-selecao').length;
@@ -74,17 +74,17 @@ function adicionarBorda_Bebida(selecionado) {
     const selecionadoAnteriormente = document.querySelector(
       ".bebida .borda-selecao"
     );
-    const iconeSelecionadoBebida = document.querySelector(".bebida .borda-selecao .icone");
+  /*  const iconeSelecionadoBebida = document.querySelector(".bebida .borda-selecao .icone");*/
   
     if (selecionadoAnteriormente !== null){
     console.log(selecionadoAnteriormente);
      selecionadoAnteriormente.classList.remove("borda-selecao");
-     iconeSelecionadoBebida.classList.remove("escondido");
+     /*iconeSelecionadoBebida.classList.remove("escondido");*/
     }
   
     selecionado.classList.add("borda-selecao");
-  adicionarIcone_Bebida();
-  iconeSelecionadoBebida.classList.add("escondido");
+  /*adicionarIcone_Bebida();
+  iconeSelecionadoBebida.classList.add("escondido");*/
 
     verificarBebida = document.querySelector(".bebida .borda-selecao");
     habilitarBotao = document.querySelectorAll(".borda-selecao").length;
@@ -96,17 +96,17 @@ function adicionarBorda_Sobremesa(selecionado) {
     const selecionadoAnteriormente = document.querySelector(
       ".sobremesa .borda-selecao"
     );
-    const iconeSelecionadoSobremesa = document.querySelector(".sobremesa .borda-selecao .icone");
+  /* const iconeSelecionadoSobremesa = document.querySelector(".sobremesa .borda-selecao .icone");*/
   
     if (selecionadoAnteriormente !== null){
     console.log(selecionadoAnteriormente);
-     selecionadoAnteriormente.classList.remove("borda-selecao");
-     iconeSelecionadoSobremesa.classList.remove("escondido");
+    selecionadoAnteriormente.classList.remove("borda-selecao");
+     /*iconeSelecionadoSobremesa.classList.remove("escondido");*/
     }
   
     selecionado.classList.add("borda-selecao");
-  adicionarIcone_Sobremesa();
-  coringaSobremesa()
+  /*adicionarIcone_Sobremesa();
+  coringaSobremesa()*/
   /*iconeSelecionadoSobremesa.classList.add("escondido");*/
 
     verificarSobremesa = document.querySelector(".sobremesa .borda-selecao");
