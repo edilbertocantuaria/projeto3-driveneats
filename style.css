@@ -63,6 +63,7 @@ body {
   line-height: 32px;
   letter-spacing: 0.018em;
   color: #333333;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 } /*elementos que diferenciam o título dos textos "Primeiro, seu prato", "Agora, sua bebida"  e "Por fim, sua sobremesa"*/
 
 
@@ -96,7 +97,69 @@ color: #333333;
    color: #000000;
 }
 
+.confirmarPedido{
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 26px;
+   text-align: center;
+   color: #FFFFFF
+}
 
+.preco, .pedido{
+   font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+letter-spacing: 0.018em;
+color: #FFFFFF;
+
+}
+
+.tudoCerto button{
+ font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 26px;
+letter-spacing: 0.018em;
+color: #50D074;
+}
+
+.cancelarOperacao{
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 23px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.018em;
+   color: #FFFFFF; 
+}
+
+.total{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 26px;
+letter-spacing: 0.018em;
+color: #FFFFFF;
+}
+
+.totalizacao{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+letter-spacing: 0.018em;
+color: #FFFFFF;
+}
 /*-----------------------------------------------------*/
 /*Ajuste de imagens*/
 .fotoPBS{
@@ -134,6 +197,18 @@ justify-content: center;
   flex-direction: column;
   align-items: flex-start;
 }
+.centVert2 {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-around;
+ }
+
+ .espHor{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
 
 /*-----------------------------------------------------*/
 /*Partes comuns*/
@@ -189,6 +264,7 @@ justify-content: center;
   width: 100vw;
   height: auto;
 
+  margin-left: 0px;
   padding-left: 16px;
   padding-right: 16px;
   gap: 16px;
@@ -207,7 +283,7 @@ justify-content: center;
  align-items: center;
  padding: 15.5px;
  gap: 10px;
-  /*justify-content: space-around;*/
+
   text-align: center;
 
   min-width: 172px;
@@ -231,13 +307,10 @@ height: 88px;
   border-radius: 9px;
 }
 
-/*.icone{
-   opacity: 1;
-}*/
-#iconeSelecao{
-   display: block;
+
+.icone{
    font-size: 19px;
-   opacity: 0;
+   opacity: 1;
    color:#32B72F;
     position: absolute;
    bottom: 14px;
@@ -257,7 +330,6 @@ height: 88px;
 }
 .revisarPedido{
 background-color: rgba(255, 255, 255, 0.9);
-/*background: rgba(255, 0, 0, 0.9);*/
 width: 100vw;
 height: 100vh;
 z-index: 5;
@@ -269,8 +341,12 @@ left: 0;
 
 .itensPedido{
 display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+
 width: 377px;
-height: 353px;
+min-height: 353px;
 left: 19px;
 top: calc(50% - 353px/2 - 0.5px);
 
@@ -278,4 +354,58 @@ background: #50D074;
 box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
 border-radius: 9px;
 }
+
+.confirmarPedido{
+   width: 376px;
+   height: 27px;
+}
+
+.listaPedidos{
+   width: 376px;
+   min-height: 107px;
+}
+
+.pedido{
+width: 326px;
+min-height: 27px;
+margin-bottom: 13px;
+}
+
+.total{
+   width: 326px;
+height: 27px;
+}
+
+.tudoCerto{
+   width: 376px;
+   height: 53px;
+}
+
+.tudoCerto button{
+width: 329px;
+height: 52px;
+left: calc(50% - 329px/2 + 0.5px);
+top: 583px;
+background: #FFFFFF;
+border: 1px solid #FFFFFF;
+border-radius: 100px;
+}
+
+.cancelarOperacao{
+   width: 376px;
+   height: 19px;
+}
+
+.item{
+   width: 172px;
+   min-height: 27px;
+   text-align: left;
+}
+
+.preco{
+   width: 98px;
+   height: 27px;
+   text-align: right;
+
+} 
 /*-----------------------------------------------------*/
