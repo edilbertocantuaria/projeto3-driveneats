@@ -12,20 +12,20 @@ let titulos = [],
   precos = [];
 
 
-function coringaPrato(coringa){
+/*function coringaPrato(coringa){
 const  iconeSelecionadoPrato= document.querySelector(".prato .borda-selecao .icone");
  coriga = iconeSelecionadoPrato.classList.add("escondido");
- }
+ }*/
 
- function coringaBebida(coringa){
+ /*function coringaBebida(coringa){
 const  iconeSelecionadoBebida= document.querySelector(".bebida .borda-selecao .icone");
  coriga = iconeSelecionadoBebida.classList.add("escondido");
- }
+ }*/
 
- function coringaSobremesa(coringa){
+/*function coringaSobremesa(coringa){
 const  iconeSelecionadoSobremesa= document.querySelector(".prato .borda-selecao .icone");
  coriga = iconeSelecionadoSobremesa.classList.add("escondido");
- }
+ }*/
 
  function adicionarIcone_Prato(check){
 const selecionado= document.querySelector(".prato .borda-selecao .icone");
@@ -59,7 +59,8 @@ function adicionarBorda_Prato(selecionado){
 
     selecionado.classList.add("borda-selecao");
     adicionarIcone_Prato();
-    coringaPrato();
+    /*coringaPrato();*/
+    iconeSelecionadoPrato.classList.add("escondido");
 
     verificarPrato = document.querySelector('.prato .borda-selecao');
     habilitarBotao = document.querySelectorAll('.borda-selecao').length;
@@ -73,38 +74,41 @@ function adicionarBorda_Bebida(selecionado) {
     const selecionadoAnteriormente = document.querySelector(
       ".bebida .borda-selecao"
     );
-    const iconeSelecionado = document.querySelector(".bebida .borda-selecao .icone");
+    const iconeSelecionadoBebida = document.querySelector(".bebida .borda-selecao .icone");
   
     if (selecionadoAnteriormente !== null){
     console.log(selecionadoAnteriormente);
      selecionadoAnteriormente.classList.remove("borda-selecao");
-     iconeSelecionado.classList.remove("escondido");
+     iconeSelecionadoBebida.classList.remove("escondido");
     }
   
     selecionado.classList.add("borda-selecao");
   adicionarIcone_Bebida();
-  coringaBebida();
+  iconeSelecionadoBebida.classList.add("escondido");
+
     verificarBebida = document.querySelector(".bebida .borda-selecao");
     habilitarBotao = document.querySelectorAll(".borda-selecao").length;
   }
   
-  function adicionarBorda_Sobremesa(selecionado) {
+function adicionarBorda_Sobremesa(selecionado) {
     console.log(selecionado);
   
     const selecionadoAnteriormente = document.querySelector(
       ".sobremesa .borda-selecao"
     );
-    const iconeSelecionado = document.querySelector(".sobremesa .borda-selecao .icone");
+    const iconeSelecionadoSobremesa = document.querySelector(".sobremesa .borda-selecao .icone");
   
     if (selecionadoAnteriormente !== null){
     console.log(selecionadoAnteriormente);
      selecionadoAnteriormente.classList.remove("borda-selecao");
-     iconeSelecionado.classList.remove("escondido");
+     iconeSelecionadoSobremesa.classList.remove("escondido");
     }
   
     selecionado.classList.add("borda-selecao");
   adicionarIcone_Sobremesa();
-  coringaSobremesa();
+  coringaSobremesa()
+  /*iconeSelecionadoSobremesa.classList.add("escondido");*/
+
     verificarSobremesa = document.querySelector(".sobremesa .borda-selecao");
     habilitarBotao = document.querySelectorAll(".borda-selecao").length;
   }
