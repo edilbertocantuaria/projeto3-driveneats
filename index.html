@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!---Relizando o resset-->
-    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="reset.css" />
 
     <!-- Invoca para que possa editar o css em outra "aba" dentro do projeto -->
     <link rel="stylesheet" href="style.css" />
@@ -24,98 +24,135 @@
       rel="stylesheet"
     />
 
-<title>DrivenEats</title>
+    <title>CUPOM DE DESCONTO</title>
   </head>
   <body>
+    <div class="header">
+      <div class="menu superior">
+        <h1 class="titulo">DrivenEats</h1>
+        <h2 class="subtitulo">Sua comida em 6 minutos</h2>
+      </div>
+      <!--Fecha a div menuSuperior-->
+    </div>
+    <!--Fecha a div header-->
 
-        <div class="header">
-            <div class="menu superior">
-                <h1 class="titulo">DrivenEats</h1>
-                <h2 class="subtitulo">Sua comida em 6 minutos</h2>
-            </div>
-            <!--Fecha a div menuSuperior-->
-        </div>
-        <!--Fecha a div header-->
-
-        <div class="main">
-          
-          <div class="catalogo centVert prato"  data-test="dishes">
-            <div class="prato-bebida-sobremesa titulo">Primeiro, seu prato</div>
-          <!--Inicia a div pbs: a div que agrupa todos os containers-->
-          <div class="pbs" >
-            <!--Inicia a div containerItem, onde fica posicionado a foto e descrição do prato, bebida ou sobremesa-->
-              <div class="containerItem frango_yin_yang "  onclick="adicionarBorda_Prato(this); realizarPedido(this);" data-test="food-option">
-                <div class="ion-icon escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
-                
-                <img  class="fotoPBS" src="Imagens\pratos\frango_yin_yang.jpg"/>
-                 <div class="descricaoItem centHorVert2">
-                  <h1 class="nomePBS" data-test="food-title">Frango Yin Yang</h1>
-                  <h1 class="descricaoPBS">Um pouco de batata, um pouco de salada</h1>
-                  <h1 class="precoPBS" data-test="food-price">R$ 14,90</h1>
-                  </div>
-                </div>
-                <!--Fecha a div containerItem-->
-
-             <div class="containerItem lasanha "  onclick="adicionarBorda_Prato(this); realizarPedido(this);" data-test="food-option">
-              <div class="ion-icon escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
-                <img  class="fotoPBS" src="Imagens\pratos\lasanha.jfif"/>
-                <div class="descricaoItem centHorVert2">
-                  <h1 class="nomePBS" data-test="food-title">Lasanha de carne</h1>
-                  <h1 class="descricaoPBS">Um paraíso na terra</h1>
-                  <h1 class="precoPBS" data-test="food-price">R$ 20,00</h1>
-                </div>
-              </div>
-              <!--Fecha a div containerItem-->
-
-              <div class="containerItem nhoque"    onclick="adicionarBorda_Prato(this); realizarPedido(this); adicionarIcone(this)" data-test="food-option">
-               <div class="ion-icon escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
-                <img  class="fotoPBS" src="Imagens\pratos\nhoque.jpg"/>
-                <div class="descricaoItem centHorVert2">
-                  <h1 class="nomePBS" data-test="food-title">Nhoque</h1>
-                  <h1 class="descricaoPBS">Sua vô fazia? A minha também não.</h1>
-                  <h1 class="precoPBS" data-test="food-price">R$ 17,90</h1>
-                </div>
-              </div>
-              <!--Fecha a div containerItem-->
-
-              <div class="containerItem galinhada "  onclick="adicionarBorda_Prato(this); realizarPedido(this); adicionarIcone(this)" data-test="food-option">
-                 <div class="ion-icon escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
-                
-                <img  class="fotoPBS" src="Imagens\pratos\galinhada.jpg"/>
-                 <div class="descricaoItem centHorVert2">
-                  <h1 class="nomePBS" data-test="food-title">Galinhada</h1>
-                  <h1 class="descricaoPBS">Bem temperada com alho, cebola e pimenta de cheiro</h1>
-                  <h1 class="precoPBS" data-test="food-price">R$ 19,90</h1>
-                  </div>
-                </div>
-                <!--Fecha a div containerItem-->
-
-
-                <div class="containerItem feijoada "  onclick="adicionarBorda_Prato(this); realizarPedido(this); adicionarIcone(this)" data-test="food-option">
-                   <div class="ion-icon escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
-                  
-                  <img  class="fotoPBS" src="Imagens\pratos\feijoada.jpg"/>
-                   <div class="descricaoItem centHorVert2">
-                    <h1 class="nomePBS" data-test="food-title">Feijoada</h1>
-                    <h1 class="descricaoPBS">Com couve refogada e rodelas de laranjas bem docinha</h1>
-                    <h1 class="precoPBS" data-test="food-price">R$ 18,89</h1>
-                    </div>
-                  </div>
-                  <!--Fecha a div containerItem-->
-
-          </div>
-           <!--Fecha a div pbs-->
-
-        </div>
-         <!--Fecha a div prato-->
-       
-         <div class="catalogo  centVert bebida" data-test="drinks">
-          <div class="prato-bebida-sobremesa titulo">Agora, sua bebida</div>
-          <!--Inicia a div pbs: a div que agrupa todos os containers-->
+    <div class="main">
+      <div class="catalogo centVert prato" data-test="dishes">
+        <div class="prato-bebida-sobremesa titulo">Primeiro, seu prato</div>
+        <!--Inicia a div pbs: a div que agrupa todos os containers-->
         <div class="pbs">
-          <div class="containerItem coquinha_gelada"    onclick="adicionarBorda_Bebida(this); realizarPedido(this)" data-test="food-option">
-             <div class="ion-icon escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
-                <img  class="fotoPBS" src="Imagens\bebidas\coquinha_gelada.png"/>
+          <!--Inicia a div containerItem, onde fica posicionado a foto e descrição do prato, bebida ou sobremesa-->
+          <div
+            class="containerItem frango_yin_yang"
+            onclick="adicionarBorda_Prato(this); realizarPedido(this); adicionarIcone(this)"
+            data-test="food-option"
+          >
+            <div class="icone escondido">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+
+            <img class="fotoPBS" src="Imagens\pratos\frango_yin_yang.jpg" />
+            <div class="descricaoItem centHorVert2">
+              <h1 class="nomePBS" data-test="food-title">Frango Yin Yang</h1>
+              <h1 class="descricaoPBS">
+                Um pouco de batata, um pouco de salada
+              </h1>
+              <h1 class="precoPBS" data-test="food-price">R$ 14,90</h1>
+            </div>
+          </div>
+          <!--Fecha a div containerItem-->
+
+          <div
+            class="containerItem lasanha"
+            onclick="adicionarBorda_Prato(this); realizarPedido(this); adicionarIcone(this)"
+            data-test="food-option"
+          >
+            <div class="icone escondido">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <img class="fotoPBS" src="Imagens\pratos\lasanha.jfif" />
+            <div class="descricaoItem centHorVert2">
+              <h1 class="nomePBS" data-test="food-title">Lasanha de carne</h1>
+              <h1 class="descricaoPBS">Um paraíso na terra</h1>
+              <h1 class="precoPBS" data-test="food-price">R$ 20,00</h1>
+            </div>
+          </div>
+          <!--Fecha a div containerItem-->
+
+          <div
+            class="containerItem nhoque"
+            onclick="adicionarBorda_Prato(this); realizarPedido(this); adicionarIcone(this)"
+            data-test="food-option"
+          >
+            <div class="icone escondido">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <img class="fotoPBS" src="Imagens\pratos\nhoque.jpg" />
+            <div class="descricaoItem centHorVert2">
+              <h1 class="nomePBS" data-test="food-title">Nhoque</h1>
+              <h1 class="descricaoPBS">Sua vô fazia? A minha também não.</h1>
+              <h1 class="precoPBS" data-test="food-price">R$ 17,90</h1>
+            </div>
+          </div>
+          <!--Fecha a div containerItem-->
+
+          <div
+            class="containerItem galinhada"
+            onclick="adicionarBorda_Prato(this); realizarPedido(this); adicionarIcone(this)"
+            data-test="food-option"
+          >
+            <div class="icone escondido">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+
+            <img class="fotoPBS" src="Imagens\pratos\galinhada.jpg" />
+            <div class="descricaoItem centHorVert2">
+              <h1 class="nomePBS" data-test="food-title">Galinhada</h1>
+              <h1 class="descricaoPBS">
+                Bem temperada com alho, cebola e pimenta de cheiro
+              </h1>
+              <h1 class="precoPBS" data-test="food-price">R$ 19,90</h1>
+            </div>
+          </div>
+          <!--Fecha a div containerItem-->
+
+          <div
+            class="containerItem feijoada"
+            onclick="adicionarBorda_Prato(this); realizarPedido(this); adicionarIcone(this)"
+            data-test="food-option"
+          >
+            <div class="icone escondido">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+
+            <img class="fotoPBS" src="Imagens\pratos\feijoada.jpg" />
+            <div class="descricaoItem centHorVert2">
+              <h1 class="nomePBS" data-test="food-title">Feijoada</h1>
+              <h1 class="descricaoPBS">
+                Com couve refogada e rodelas de laranjas bem docinha
+              </h1>
+              <h1 class="precoPBS" data-test="food-price">R$ 18,89</h1>
+            </div>
+          </div>
+          <!--Fecha a div containerItem-->
+        </div>
+        <!--Fecha a div pbs-->
+      </div>
+      <!--Fecha a div prato-->
+
+      <div class="catalogo centVert bebida" data-test="drinks">
+        <div class="prato-bebida-sobremesa titulo">Agora, sua bebida</div>
+        <!--Inicia a div pbs: a div que agrupa todos os containers-->
+        <div class="pbs">
+          <div
+            class="containerItem coquinha_gelada"
+            onclick="adicionarBorda_Bebida(this); realizarPedido(this)"
+            data-test="food-option"
+          >
+              <div class="icone escondido">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <img class="fotoPBS" src="Imagens\bebidas\coquinha_gelada.png" />
             <div class="descricaoItem centHorVert2">
               <h1 class="nomePBS" data-test="food-title">Coquinha gelada</h1>
               <h1 class="descricaoPBS">Lata 350ml</h1>
@@ -124,9 +161,15 @@
           </div>
           <!--Fecha a div containerItem-->
 
-          <div class="containerItem guarana"    onclick="adicionarBorda_Bebida(this); realizarPedido(this)" data-test="food-option">
-           <div class="ion-icon escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
-                <img  class="fotoPBS" src="Imagens\bebidas\guarana.jpg"/>
+          <div
+            class="containerItem guarana"
+            onclick="adicionarBorda_Bebida(this); realizarPedido(this)"
+            data-test="food-option"
+          >
+              <div class="icone escondido">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <img class="fotoPBS" src="Imagens\bebidas\guarana.jpg" />
             <div class="descricaoItem centHorVert2">
               <h1 class="nomePBS" data-test="food-title">Guaraná Mineiro</h1>
               <h1 class="descricaoPBS">Pitchulinha 250ml</h1>
@@ -135,9 +178,15 @@
           </div>
           <!--Fecha a div containerItem-->
 
-          <div class="containerItem dolly"   onclick="adicionarBorda_Bebida(this); realizarPedido(this)" data-test="food-option">
-              <div class="ion-icon escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
-                <img  class="fotoPBS" src="Imagens\bebidas\dolly.jpg"/>
+          <div
+            class="containerItem dolly"
+            onclick="adicionarBorda_Bebida(this); realizarPedido(this)"
+            data-test="food-option"
+          >
+              <div class="icone escondido">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <img class="fotoPBS" src="Imagens\bebidas\dolly.jpg" />
             <div class="descricaoItem centHorVert2">
               <h1 class="nomePBS" data-test="food-title">Dolly</h1>
               <h1 class="descricaoPBS">Aposto que você também nunca bebeu</h1>
@@ -146,99 +195,129 @@
           </div>
           <!--Fecha a div containerItem-->
         </div>
-         <!--Fecha a div pbs-->
+        <!--Fecha a div pbs-->
       </div>
-       <!--Fecha a bebida-->
+      <!--Fecha a bebida-->
 
-       <div class="catalogo centVert sobremesa" data-test="desserts">
+      <div class="catalogo centVert sobremesa" data-test="desserts">
         <div class="prato-bebida-sobremesa titulo">Por fim, sua sobremesa</div>
-      
-      <div class="pbs">
-        <div class="containerItem pudim"   onclick="adicionarBorda_Sobremesa(this); realizarPedido(this)" data-test="food-option">
-           <div class="ion-icon escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
-                <img  class="fotoPBS" src="Imagens\sobremesas\pudim.jpg"/>
-          <div class="descricaoItem centHorVert2">
-            <h1 class="nomePBS" data-test="food-title">Pudim</h1>
-            <h1 class="descricaoPBS">Apenas pudim</h1>
-            <h1 class="precoPBS" data-test="food-price">R$ 7,90</h1>
-          </div>
-        </div>
-        <!--Fecha a div containerItem-->
 
-        <div class="containerItem tortaAlema"   onclick="adicionarBorda_Sobremesa(this); realizarPedido(this)" data-test="food-option">
-          <div class="ion-icon escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
-                <img  class="fotoPBS" src="Imagens\sobremesas\tortaAlema.webp"/>
-          <div class="descricaoItem centHorVert2">
-            <h1 class="nomePBS" data-test="food-title">Torta Alemã</h1>
-            <h1 class="descricaoPBS">Evite a piada do pavê</h1>
-            <h1 class="precoPBS" data-test="food-price">R$ 8,50</h1>
+        <div class="pbs">
+          <div
+            class="containerItem pudim"
+            onclick="adicionarBorda_Sobremesa(this); realizarPedido(this)"
+            data-test="food-option"
+          >
+              <div class="icone escondido">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <img class="fotoPBS" src="Imagens\sobremesas\pudim.jpg" />
+            <div class="descricaoItem centHorVert2">
+              <h1 class="nomePBS" data-test="food-title">Pudim</h1>
+              <h1 class="descricaoPBS">Apenas pudim</h1>
+              <h1 class="precoPBS" data-test="food-price">R$ 7,90</h1>
+            </div>
           </div>
-        </div>
-        <!--Fecha a div containerItem-->
+          <!--Fecha a div containerItem-->
 
-        <div class="containerItem sorvete"  onclick="adicionarBorda_Sobremesa(this); realizarPedido(this)" data-test="food-option">
-           <div class="ion-icon escondido"><ion-icon name="checkmark-circle"></ion-icon></div> 
-          <img class="fotoPBS"  src="Imagens\sobremesas\sorvete.jfif"/>
-          <div class="descricaoItem centHorVert2">
-            <h1 class="nomePBS" data-test="food-title">Sorvete</h1>
-            <h1 class="descricaoPBS">Tem até de cupuaçu! </h1>
-            <h1 class="precoPBS" data-test="food-price">R$ 6,70</h1>
+          <div
+            class="containerItem tortaAlema"
+            onclick="adicionarBorda_Sobremesa(this); realizarPedido(this)"
+            data-test="food-option"
+          >
+              <div class="icone escondido">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <img class="fotoPBS" src="Imagens\sobremesas\tortaAlema.webp" />
+            <div class="descricaoItem centHorVert2">
+              <h1 class="nomePBS" data-test="food-title">Torta Alemã</h1>
+              <h1 class="descricaoPBS">Evite a piada do pavê</h1>
+              <h1 class="precoPBS" data-test="food-price">R$ 8,50</h1>
+            </div>
           </div>
+          <!--Fecha a div containerItem-->
+
+          <div
+            class="containerItem sorvete"
+            onclick="adicionarBorda_Sobremesa(this); realizarPedido(this)"
+            data-test="food-option"
+          >
+          <div class="icone escondido">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <img class="fotoPBS" src="Imagens\sobremesas\sorvete.jfif" />
+            <div class="descricaoItem centHorVert2">
+              <h1 class="nomePBS" data-test="food-title">Sorvete</h1>
+              <h1 class="descricaoPBS">Tem até de cupuaçu!</h1>
+              <h1 class="precoPBS" data-test="food-price">R$ 6,70</h1>
+            </div>
+          </div>
+          <!--Fecha a div containerItem-->
         </div>
-        <!--Fecha a div containerItem-->
+        <!--Fecha a div pbs-->
       </div>
-       <!--Fecha a div pbs-->
+      <!--Fecha a div sobremesa-->
     </div>
-     <!--Fecha a div sobremesa-->
-       
-       
-        </div>
-        <!--Fecha a div main-->
+    <!--Fecha a div main-->
 
-<div class="footer">
-          <div class="menu inferior centHorVert">
-              <button class="botaoPedido" id="botao" onclick="disponibilizarBotao(this)" data-test="finish-button">Selecione os 3 itens
-  para fechar o pedido</button>
+    <div class="footer">
+      <div class="menu inferior centHorVert">
+        <button
+          class="botaoPedido"
+          id="botao"
+          onclick="disponibilizarBotao(this)"
+          data-test="finish-button"
+        >
+          Selecione os 3 itens para fechar o pedido
+        </button>
+      </div>
+    </div>
+    <!--Fecha a div footer-->
+
+    <div class="revisarPedido escondido centHorVert">
+      <div class="itensPedido escondido">
+        <div class="confirmarPedido">Confirme seu pedido</div>
+        <div class="listaPedidos centVert2">
+          <div class="pedido espHor">
+            <div class="item"></div>
+            <div class="preco"></div>
           </div>
-</div>
- <!--Fecha a div footer-->
-
-
-
- <div class="revisarPedido escondido centHorVert">
-  <div class="itensPedido escondido">
-  <div class="confirmarPedido">Confirme seu pedido</div>
-<div class="listaPedidos centVert2">
-<div class="pedido espHor">
-  <div class="item"></div>
-  <div class="preco"></div>
-</div>
-<div class="pedido espHor">
-  <div class="item"></div>
-  <div class="preco"></div>
-</div>
-<div class="pedido espHor">
-  <div class="item"></div>
-  <div class="preco"></div>
-</div>
-</div>
-<div class="total espHor">
-    <div class="item">TOTAL </div>
-    <div class="preco">R$ <span class="valorTotal"></span></div>
-
-</div>
-<div class="tudoCerto centHorVert">
-<button class="centHorVert" onclick="mensagem(this)">Tudo certo, pode pedir!</button>
-
-</div>
-<div class="cancelarOperacao centHorVert" onclick="cancelar(this)">Cancelar</div>
-</div>
-</div>
+          <div class="pedido espHor">
+            <div class="item"></div>
+            <div class="preco"></div>
+          </div>
+          <div class="pedido espHor">
+            <div class="item"></div>
+            <div class="preco"></div>
+          </div>
+        </div>
+        <div class="total espHor">
+          <div class="item">TOTAL</div>
+          <div class="preco total">R$ <span class="valorTotal"></span></div>
+        </div>
+        <div class="desconto espHor">
+          <div class="item">DESCONTO</div>
+          <div class="preco total">R$ <span class="descontoTotal"></span></div>
+        </div>
+        <div class="precoFinal espHor">
+          <div class="item">VALOR FINAL</div>
+          <div class="preco total">R$ <span class="valorFinal"></span></div>
+        </div>
+        <div class="tudoCerto centHorVert">
+          <button class="centHorVert" onclick="mensagem(this)">
+            Tudo certo, pode pedir!
+          </button>
+        </div>
+        <div class="cancelarOperacao centHorVert" onclick="cancelar(this)">
+          Cancelar
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
     <script
-    type="module"
-    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-  ></script>
-
-</body>
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
+</html>
