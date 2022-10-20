@@ -308,9 +308,9 @@ body {
   border-radius: 9px;
 }
 
-ion-icon{
+.icone{
   font-size: 19px;
-  opacity: 1;
+  opacity: 0;
   color: #32b72f;
   position: absolute;
   bottom: 14px;
@@ -325,6 +325,9 @@ ion-icon{
 /*-----------------------------------------------------*/
 
 /*Revisao do pedido*/
+.catalogo .pbs .containerItem.borda-selecao .escondido-check {
+  opacity: 1;
+}
 .escondido {
   display: none;
 }
